@@ -1,24 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import * as React from "react";
+import IntroBlurb from "./components/IntroBlurb"
+import ToolBar from './components/ToolBar';
+import AboutMe from './components/AboutMe';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ToolBar />
+      <div
+        className="App"
+      >
+        <IntroBlurb />
+        <img
+          src='https://wallpaperaccess.com/full/1769725.jpg'
+          style={{ width: '100%'}}
+        />
+        <AboutMe />
+      </div>
     </div>
+
   );
 }
 
