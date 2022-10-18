@@ -1,8 +1,10 @@
 import './App.css';
 import * as React from "react";
-import IntroBlurb from "./components/IntroBlurb"
+import Intro from "./components/Intro"
 import ToolBar from './components/ToolBar';
 import AboutMe from './components/AboutMe';
+import ImageDivider from './components/ImageDivider';
+import Skills from './components/Skills';
 
 function App() {
   return (
@@ -11,12 +13,10 @@ function App() {
       <div
         className="App"
       >
-        <IntroBlurb />
-        <img
-          src='https://wallpaperaccess.com/full/1769725.jpg'
-          style={{ width: '100%'}}
-        />
+        <Intro />
+        <ImageDivider/> 
         <AboutMe />
+        <Skills />
       </div>
     </div>
 

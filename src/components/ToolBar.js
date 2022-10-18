@@ -19,14 +19,14 @@ export default function ToolBar() {
 			<ThemeProvider theme={theme}>
 				<AppBar position="sticky">
 					<Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-						<Link style={{ textDecoration: "none" }} to="/" spy={true} smooth={true} offset={50} duration={500} >
+						<Link style={{ textDecoration: "none" }} to="/" spy={true} smooth={true} offset={-80} duration={500} >
 							<Typography sx={{ padding: '20px', fontSize: "30px", color: "white", fontFamily: "Courier Prime" }}>
 								MELISSA
 							</Typography>
 						</Link>
 						<Button position="relative" variant="text" sx={{ paddingLeft: '20px', paddingRight: '20px', my: 2, color: 'white', display: 'block', fontFamily: "Courier Prime" }}
 						>
-							<Link to="aboutMe" spy={true} smooth={true} offset={50} duration={500} >
+							<Link to="aboutMe" spy={true} smooth={true} offset={-250} duration={500} >
 								About Me
 							</Link>
 						</Button>
