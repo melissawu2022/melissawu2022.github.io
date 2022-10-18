@@ -47,7 +47,7 @@ export function ImageDivider1() {
 export function ImageDivider2() {
   return (
     <>
-      <ArrowButton toLink="projects" />
+      <ArrowButton toLink="skills" />
       <img
         alt="imageDivider"
         src='https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/blue-mountains-watercolor-paintingmodern-landscape-green-palace.jpg'
@@ -60,7 +60,7 @@ export function ImageDivider2() {
 export function ImageDivider3() {
   return (
     <>
-      <ArrowButton toLink="skills" />
+      <ArrowButton toLink="projects" />
       <img
         alt="imageDivider"
         src='https://img.freepik.com/premium-vector/modern-design-vector-illustration-gorgeous-chinese-ink-landscape-painting_29865-4220.jpg?w=2000'

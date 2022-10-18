@@ -19,9 +19,9 @@ function App() {
         <ImageDivider1/> 
         <AboutMe />
         <ImageDivider2/>
-        <Projects />
-        <ImageDivider3/>
         <Skills />
+        <ImageDivider3 />
+        <Projects />
         <Footer />
       </div>
     </div>
