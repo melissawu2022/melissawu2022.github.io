@@ -26,7 +26,7 @@ function Blurb() {
 
 function Intro() {
   return (
-    <Stack id="/" style={{ paddingTop: '100px', paddingBottom: '300px', background: "linear-gradient(#9bc9a7, #70A6D4)" }} direction="row" spacing={2}>
+    <Stack id="/" style={{ paddingTop: '100px', paddingBottom: '300px', background: "linear-gradient(#9bc9a7, #70A6D4, #FFFFFF)" }} direction="row" spacing={2}>
       <img style={{ paddingTop: '50px', width: '250px' }} src={avatar} alt="avatar"/>
       <Blurb />
 

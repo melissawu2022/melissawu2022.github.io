@@ -3,8 +3,10 @@ import * as React from "react";
 import Intro from "./components/Intro"
 import ToolBar from './components/ToolBar';
 import AboutMe from './components/AboutMe';
-import ImageDivider from './components/ImageDivider';
+import { ImageDivider1, ImageDivider2, ImageDivider3 } from './components/ImageDivider';
 import Skills from './components/Skills';
+import Projects from './components/Projects';
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -14,9 +16,13 @@ function App() {
         className="App"
       >
         <Intro />
-        <ImageDivider/> 
+        <ImageDivider1/> 
         <AboutMe />
+        <ImageDivider2/>
+        <Projects />
+        <ImageDivider3/>
         <Skills />
+        <Footer />
       </div>
     </div>
 

@@ -7,7 +7,7 @@ import java from './images/java.png'
 import python from './images/python.png'
 import javascript from './images/javascript.png'
 import react from './images/react.png'
-import { Card } from '@mui/material';
+import graphql from './images/graphql.png'
 
 const iconStyle = {
   width: '50px',
@@ -18,9 +18,9 @@ const iconStyle = {
 
 function SkillsHeader() {
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignContent: 'center'}}>
+    <div id="skills" style={{ display: 'flex', justifyContent: 'center', alignContent: 'center'}}>
       <HomeRepairServiceIcon  fontSize='large' style={{ marginTop: '50px'}} />
-      <h2 style={{ fontFamily: 'Courier Prime', padding: '40px'}}>SKILLZZZZZZZZ </h2>
+      <h2 style={{ fontFamily: 'Courier Prime', padding: '40px'}}> SKILLS </h2>
       <HomeRepairServiceIcon fontSize='large' style={{ marginTop: '50px' }} />
     </div>
   )
@@ -30,20 +30,22 @@ function SkillsHeader() {
 function IconRow() {
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignContent: 'center', }}>
-      <img style={iconStyle} src={dynamodb} alt="expressicon" />
-      <img style={iconStyle} src={expressjs} alt="expressicon" />
-      <img style={iconStyle} src={stackOverflow} alt="stackoverflowicon" />
+      <img style={iconStyle} src={javascript} alt="jsIcon" />
       <img style={iconStyle} src={java} alt="javaIcon" />
       <img style={iconStyle} src={python} alt="pythonIcon" />
-      <img style={iconStyle} src={javascript} alt="jsIcon" />
       <img style={iconStyle} src={react} alt="stackOverflowIcon" />
+      <img style={iconStyle} src={expressjs} alt="expressicon" />
+      <img style={iconStyle} src={graphql} alt="stackoverflowicon" />
+      <img style={iconStyle} src={dynamodb} alt="expressicon" />
+      <p style={{padding: '20px'}}>(and of course)</p>
+      <img style={iconStyle} src={stackOverflow} alt="stackoverflowicon" />
     </div>
   )
 }
 
 export default function Skills() {
   return (
-    <div style={{ paddingBottom: '100px' }}>
+    <div style={{ padding: '100px' }}>
       <SkillsHeader />
       <IconRow />
     </div>
