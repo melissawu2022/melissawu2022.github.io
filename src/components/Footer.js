@@ -4,19 +4,6 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MailIcon from '@mui/icons-material/Mail';
 
-
-const footerStyle = {
-  marginTop: '1rem',
-  padding: '1rem',
-  color: 'rgb(235, 195, 64)',
-  position: 'fixed',
-  bottom: 0,
-  left: 0,
-  width: '100%',
-}
-
-
-
 function FooterIconRow() {
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignContent: 'center'}}>
