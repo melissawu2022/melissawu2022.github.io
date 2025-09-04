@@ -13,7 +13,7 @@ const theme = createTheme({
 	},
 });
 
-export default function ToolBar() {
+export default function NavBar() {
 	return (
 		<>
 			<ThemeProvider theme={theme}>
@@ -24,11 +24,6 @@ export default function ToolBar() {
 								<Typography sx={{ padding: '20px', fontSize: "30px", color: "white", fontFamily: "Courier Prime" }}>
 									MELISSA
 								</Typography>
-							</Link>
-						</Button>
-						<Button position="relative" variant="text" sx={{ paddingLeft: '20px', paddingRight: '20px', my: 2, color: 'white', display: 'block', fontFamily: "Courier Prime" }}>
-							<Link to="aboutMe" spy={true} smooth={true} offset={-250} duration={500} >
-								About Me
 							</Link>
 						</Button>
 						<Button position="relative" variant="text" sx={{ paddingLeft: '20px', paddingRight: '20px', my: 2, color: 'white', display: 'block', fontFamily: "Courier Prime" }}>
