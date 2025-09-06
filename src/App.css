@@ -1,12 +1,87 @@
-
-.font-link {
-  font-family: 'Courier Prime', monospace;
-  text-indent: 20px;
-  font-size: 15px;
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(39, 39, 39);
+  background-size: cover;
+  align-content: center;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: auto auto;
 }
 
-.font-link2 {
-  text-indent: 40px;
-  font-family: 'Courier Prime', monospace;
-  font-size: 15px;
+@media only screen and (max-width: 600px) {
+  .container {
+    background-image: cover;
+    grid-template-columns: auto;
+  }
+
+  .headshot-div {
+    grid-row-start: 1;
+  }
+
+  .headshot {
+    background: cornsilk;
+    border-radius: 10rem;
+  }
+}
+
+.text-block {
+  color: white;
+  text-align: left;
+  align-content: center;
+  padding-left: 100px;
+}
+
+.headshot-div {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.headshot {
+  width: 50vw;
+}
+
+
+
+.NavigationMenuRoot ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.NavigationMenuLink {
+  display: inline-block;
+  padding: 0.25rem 1.25rem;
+  border-radius: 0.25rem;
+  gap: 1rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: background 0.15s, color 0.15s;
+}
+
+.NavigationMenuItem {
+  padding: 0.5rem;
+  list-style: none;
+}
+
+.NavigationMenuLink:hover,
+.NavigationMenuLink:focus {
+  background: #f3f3f3;
+  color: #111;
+  outline: none;
+}
+
+.NavigationMenuList {
+  border-radius: 0.5rem;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background-color: rgb(39, 39, 39);
 }
