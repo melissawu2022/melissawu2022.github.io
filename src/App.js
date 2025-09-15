@@ -4,7 +4,7 @@ import AboutMe from './components/AboutMe';
 import Skills from './components/Skills';
 import { Theme } from "@radix-ui/themes";
 import "@radix-ui/themes/styles.css";
-import { BrowserRouter, Route, Routes } from 'react-router';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router';
 
 import './App.css';
 // import './../styles/App.css';
@@ -22,7 +22,7 @@ function App() {
             <Route path="/skills" element={<Skills />} />
             <Route path="/aboutMe" element={<AboutMe />} />
             <Route path="/hobbies" element={<Hobbies />} />
-            {/* <Route path="/*" element={<Navigate to="/aboutMe" replace />} /> */}
+            <Route path="/*" element={<Navigate to="/aboutMe" replace />} />
           </Routes>
         </div>
       </Theme>
