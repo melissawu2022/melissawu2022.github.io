@@ -1,6 +1,6 @@
 import React from 'react'
 import { imageNames } from '../constants/SkillsConstants'
-import "../Skills.css"
+import "./../styles/Skills.css"
 
 export default function Skills() {
   return (

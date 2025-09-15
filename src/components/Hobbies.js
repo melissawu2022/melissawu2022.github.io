@@ -1,5 +1,5 @@
 import React from 'react'
-import "../Hobbies.css"
+import "./../styles/Hobbies.css"
 
 export default function Hobbies() {
   return (

@@ -1,7 +1,7 @@
-import { Button, Text } from "@radix-ui/themes"
 import React from "react"
+import { Button, Text } from "@radix-ui/themes"
 import avatar from './images/headshot-bitmojied.webp'
-import "../AboutMe.css"
+import "./../styles/AboutMe.css"
 
 export default function AboutMe() {
   return (

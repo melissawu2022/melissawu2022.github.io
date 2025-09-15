@@ -4,9 +4,10 @@ import AboutMe from './components/AboutMe';
 import Skills from './components/Skills';
 import { Theme } from "@radix-ui/themes";
 import "@radix-ui/themes/styles.css";
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router';
+import { BrowserRouter, Route, Routes } from 'react-router';
 
 import './App.css';
+// import './../styles/App.css';
 import Hobbies from "./components/Hobbies";
 
 function App() {
