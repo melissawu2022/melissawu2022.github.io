@@ -32,7 +32,7 @@ export default function NavBar() {
           <NavigationMenu.Item className="NavigationMenuItem">
             <NavigationMenu.Link
               className={`NavigationMenuLink${location.pathname.includes('/aboutMe') ? '--active-nav-item' : ''}`}
-              href="./aboutMe"
+              href={`${process.env.PUBLIC_URL}/aboutMe`}
             >
               <Text weight="bold">
                 About Me
@@ -42,7 +42,7 @@ export default function NavBar() {
           <NavigationMenu.Item className="NavigationMenuItem">
             <NavigationMenu.Link
               className={`NavigationMenuLink${location.pathname.includes('/skills') ? '--active-nav-item' : ''}`}
-              href="./skills"
+              href={`${process.env.PUBLIC_URL}/skills`}
             >
               <Text weight="bold">
                 Skills
@@ -52,7 +52,7 @@ export default function NavBar() {
           <NavigationMenu.Item className="NavigationMenuItem">
             <NavigationMenu.Link
               className={`NavigationMenuLink${location.pathname.includes('/hobbies') ? '--active-nav-item' : ''}`}
-              href="./hobbies"
+              href={`${process.env.PUBLIC_URL}/hobbies`}
             >
               <Text weight="bold">
                 Hobbies

@@ -7,12 +7,12 @@ import "@radix-ui/themes/styles.css";
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router';
 
 import './App.css';
-// import './../styles/App.css';
 import Hobbies from "./components/Hobbies";
 
 function App() {
+  console.log("process.env.PUBLIC_URL", process.env.PUBLIC_URL);
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Theme>
         <div className="app-container">
           <div className="navbar-container">
