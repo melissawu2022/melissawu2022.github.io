@@ -1,0 +1,180 @@
+:root {
+  --light-blue: #b1f2ff;
+  --dark-grey: #272727; 
+}
+
+.aboutme-container {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--dark-grey);
+  background-size: cover;
+  align-content: center;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  box-sizing: border-box;
+}
+
+.text-block {
+  color: white;
+  text-align: left;
+  align-content: center;
+  padding-left: 100px;
+}
+
+.headshot-div {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.headshot {
+  width: 50vw;
+}
+
+.aboutmebio {
+  color: var(--light-blue);
+}
+
+.NavigationMenuRoot ul {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.NavigationMenuLink, 
+.NavigationMenuLink--active-nav-item {
+  display: inline-block;
+  padding: 0.25rem 1.25rem;
+  border-radius: 0.25rem;
+  gap: 1rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: background 0.15s, color 0.15s;
+}
+
+.NavigationMenuLink-github {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem; 
+  transition: background 0.15s, color 0.15s; 
+}
+
+.NavigationMenuItem, .NavigationMenuItem-github {
+  padding: 0.5rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.NavigationMenuLink--active-nav-item,
+.NavigationMenuLink:hover,
+.NavigationMenuLink:focus {
+  background: #f3f3f3;
+  color: #111;
+  outline: none;
+}
+
+.NavigationMenuList {
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+
+.github-icon-white, 
+.github-icon-black {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding-right: 0.5rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .DropdownMenuTrigger,
+  .DropdownMenuRoot {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .aboutme-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    min-height: 0;
+    height: auto;
+  }
+
+  .headshot-div {
+    grid-row-start: 1;
+  }
+
+  .headshot {
+    background: cornsilk;
+    border-radius: 10rem;
+  }
+
+  .NavigationMenuRoot {
+    display: none;
+  }
+
+  .DropdownMenuTrigger {
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+  }
+
+  .DropdownMenuContent {
+    background-color: #444444;
+    padding: 1rem;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    margin-top: 1rem;
+  }
+
+  .DropdownMenuItem, 
+  .DropdownMenuItem--active-nav-item {
+    color: white;
+    padding: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+  .DropdownMenuItem:hover,
+  .DropdownMenuItem--active-nav-item {
+    background: var(--light-blue);
+    color: black;
+    border-radius: 2rem;
+    outline: none;
+  }
+
+  .internal-link-styling {
+    text-decoration: none;
+  }
+
+  .dropdown-menu-item-wrapper {
+    padding-bottom: 1rem;
+  }
+
+  .DropdownMenuTrigger:hover,
+  .DropdownMenuTrigger.open { 
+    background: #444444;
+  }
+
+  .DropdownMenuTrigger:hover {
+    cursor: pointer;
+  }
+}
+
+  

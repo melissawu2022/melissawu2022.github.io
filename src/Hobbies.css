@@ -1,0 +1,25 @@
+:root {
+  --dark-grey: #272727; 
+}
+
+.hobbies-container {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--dark-grey);
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center; 
+  align-content: center; 
+  align-items: center; 
+  box-sizing: border-box;
+}
+
+.hobbies-blurb {
+  color: white;
+  text-align: left;
+  padding: 5rem;
+}
+
+.hobby-list-item {
+  padding-bottom: 1rem;
+}

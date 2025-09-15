@@ -1,12 +1,12 @@
 import { Button, Text } from "@radix-ui/themes"
 import React from "react"
 import avatar from './images/headshot-bitmojied.webp'
-import "../App.css"
+import "../AboutMe.css"
 
-export default function LandingPage() {
+export default function AboutMe() {
   return (
-    <div class="container">
-      <div class="text-block">
+    <div className="aboutme-container">
+      <div className="text-block">
         Hi there
         <span role="img" aria-label="wave-hello" style={{ padding: '10px' }}>👋🏻</span>
         I'm
@@ -17,13 +17,17 @@ export default function LandingPage() {
         </Text>
         <br />
         <div style={{ paddingTop: '40px' }} />
-        <Text size="6" weight="bold" style={{ color: "#b8f2ff" }} >
+        <Text className="aboutmebio" size="6" weight="bold" >
           SOFTWARE DEVELOPER + GENERAL TINKERER
         </Text>
         <br />
         <div style={{ paddingTop: '40px' }} />
-        <Button>
-          Click here to get my experience on 1 page
+        <Button onClick={
+          () => {
+            window.open("https://drive.google.com/uc?export=download&id=1Vz4lm4TPqdYBciJll4jnbMOrWxhfJC_W", "_blank")
+          }
+        }>
+          Download my resume
         </Button>
       </div>
       <div className="headshot-div">
