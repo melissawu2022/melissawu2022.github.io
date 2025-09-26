@@ -22,7 +22,7 @@ function App() {
             <Route path="/skills" element={<Skills />} />
             <Route path="/aboutMe" element={<AboutMe />} />
             <Route path="/hobbies" element={<Hobbies />} />
-            {/* <Route path="/*" element={<Navigate to="/aboutMe" replace />} /> */}
+            <Route path="/*" element={<Navigate to="/aboutMe" replace />} />
           </Routes>
         </div>
       </Theme>
